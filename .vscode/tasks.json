@@ -1,1 +1,30 @@
-//
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Workspace Run",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "src/*.cpp",
+                "-I./raylib/include",
+                "-I./include",
+                "-L./raylib/lib",
+                "-lraylib",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm",
+                "-lshell32",
+                "-luser32",
+                "-mwindows", // You can comment out this line if you want a console window
+                "-o", "bin/game.exe",
+                "&&", "./bin/game.exe",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+        }
+    ]
+}
