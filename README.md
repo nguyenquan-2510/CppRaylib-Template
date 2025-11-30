@@ -1,7 +1,7 @@
 # CppRaylib-Template
 A template to code C++ with raylib in vscode, using g++
 
-> A sample workspace
+> A sample workspace but this is window-only
 
 Inspired by vs Solution explorer
 
