@@ -1,7 +1,12 @@
 #include <raylib.h>
 
+#include "std.hpp"
+
 int main()
 {
+    ssd a;
+    a.hello();
+
     InitWindow(800, 600, "Example");
 
     while (!WindowShouldClose())
