@@ -5,7 +5,6 @@
 int main()
 {
     ssd a;
-    a.hello();
 
     InitWindow(800, 600, "Example");
 
@@ -20,5 +19,6 @@ int main()
     }
 
     CloseWindow();
+    a.hello();
     return 0;
 }
